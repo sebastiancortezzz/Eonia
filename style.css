@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* selector de etiqueta */
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+}
+
+.pantalla {
+    background-image: url(./imagenes/verdemica.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.encabezado_lista {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    margin: 16px;
+    line-height: 50px;
+    list-style: none;
+}
+
+.encabezado_lista_item {    
+     font-weight: 800;
+}
+
+.galeria_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
+}
+.galeria_card_imagen {
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+} 
+.textosresaltados {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    height: 30vh;
+    color: black;
+    font-size: large;
+    width: 100%;
+}
+.textosresaltados_card_imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.textosresaltados_imagen {
+    width: 50px;
+   height: 40px;  
+    justify-content: space-evenly;
+}
+.textoscomunes {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: large;
+    color: black;
+}
+body {
+    background-color: rgb(170, 243, 170);
+}
+footer {
+    display: flex;
+    background-color: rgb(170, 243, 170);
+
+}
+/* media queri 768 de index */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(220, 174, 224)
+    }
+
+    .galeria_card {
+         display: grid; 
+         grid-template-columns: repeat(2, 2fr);
+         margin: 150px;
+    }
+
+    .textosresaltados_imagen {
+        width: 50px;
+        height: 40px;  
+        justify-content: space-evenly;
+    }
+
+    footer {
+        background-color: rgb(224, 144, 144)
+    }
+ }   
+ /* media queri 320 index */
+@media screen and (max-width:320px) {
+    h1{
+       display: flex;
+        align-items: center;
+    }
+
+    h2{
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        background-color: plum;
+    }
+
+    .encabezado_lista {
+        display: grid;
+        justify-content: stretch;
+        font-size: large;
+        font-weight: 900;
+    }
+
+    .textoscomunes {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: brown;
+    }
+
+    .textosresaltados {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+     .textosresaltados_card_imagen {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+    } 
+
+    .galeria_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px;
+    } 
+
+   .galeria_card_imagen {
+        width: 20vh;
+        height: 110px;
+        max-width: 100%;    
+    }
+
+    footer {
+        display: flex;
+        background-color: plum;
+        align-items: center;
+        width: 100%;
+    }
+
+    .textosresaltados_imagen {
+         width: 35px   
+    }
+}
+
+
+/*  quienes somos */
+header a {
+    text-decoration: none;
+}
+
+.imagen1 {
+    background-image: url(./imagenes/celestebuzo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center
+}
+
+.imagen2 {
+    text-align: center;
+    /* revisar todo */
+    background-image: url(./imagenes/fotogrupal.jpg);
+    background-position: center;
+    background: no-repeat;
+}
+
+.centro1 {
+    text-align: center;
+    /* revisar */
+    color: black;
+    /* revisar */
+    font-size: large;
+}
+
+.parrafo1 {
+    text-align: center;
+    color: brown;
+    font-size: large;
+}
+
+.ubi {
+    text-align: start;
+
+}
+
+.mapaubi {
+    height: 50vh;
+    padding: 10px 50px;
+    margin: 50px auto;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    line-height: 30px;
+    list-style: none;
+    font-size: large;
+    font-weight: 800;
+}
+
+.menu_item1 {
+    display: inline-block;
+    margin: 16px;
+    line-height: 50px;
+    justify-content: space-evenly;
+}
+
+.imagen1 {
+    background-image: url(./imagenes/celestebuzo.jpg);
+    background-position: center;
+    background: no-repeat;
+    background-size: 100%;
+}
+
+.imagen2 {
+    text-align: center;
+    background-image: url(./imagenes/fotogrupal.jpg);
+    background-position: center;
+    background: no-repeat;
+}
+/* contacto */
+.fotopantalla {
+    background-image: url(./imagenes/pibesypibas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.margen {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    padding: 4%;
+    font-weight: 800;
+    list-style: none;
+}
+
+.contactanos {
+    padding: 5px 150px 50px 150px;
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+}
+
+.contactanos_item {
+    padding: 0px;
+    margin: 5px;
+}
+
+.parrafo2 {
+    text-align: center;
+    font-weight: 900;
+    background-color: rgb(250, 253, 209);
+    border: solid 1px;
+    color: rgb(223, 103, 103);
+
+}
+/* media queri contacto 768 */
+@media screen and (max-width: 768px) {
+    footer {
+        background-color: plum;
+        align-items: center;
+        max-width: 100%; 
+    }
+    .margen {
+        display: grid;
+        justify-content: stretch;
+        font-size: large;
+        font-weight: 900;
+        line-height: 7vh;
+    }
+}
+/* media queri contacto 320 */
+@media screen and (max-width: 320px) {
+    body {
+        background-color: rgb(240, 190, 133) 
+    }
+    footer ul {
+        margin: 0%;
+        display: inline-block;
+        background-color: rgba(142, 153, 250, 0.945);
+        max-width: 100%;
+        height: auto;
+    }
+    .parrafo2 {
+        display: grid;
+        text-align: center;
+        font-weight: 900;
+        background-color: rgb(240, 235, 195);
+        border: solid 1px;
+        color: black;
+        font-size: small;
+    }
+
+    .contactanos {
+        grid-template-columns: 25vh;
+        justify-content: end;
+    }
+}
+/* Politica de Privacidad*/
+.fotodeatraspantalla {
+    background-image: url(./imagenes/verdeynaranja.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.menupolitica {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    line-height: 30px;
+    list-style: none;
+    font-size: large;
+}
+
+.menupolitica_item {
+    margin: 16px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Producto*/
+.fotoatras {
+    background-image: url(./imagenes/pibeypiba1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.menuproducto {
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 14px;
+    line-height: 50px;
+    list-style: none;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.menuproducto_item {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.precios_item {
+    display: inline-block;
+    margin: 70px;
+    padding: 50px;
+}
+
+.precios_item_imagen {
+    width: 260px;
+    height: 55vh;
+    margin: 30px;
+}
+
+.textoslorem {
+    background-color: black;
+    text-align: center;
+    font-weight: 900;
+}
+
+.parrafoproducto {
+    padding: 50px;
+    color: brown;
+    text-align: center;
+    font-weight: 900;
+}
