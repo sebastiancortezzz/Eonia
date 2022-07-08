@@ -37,17 +37,33 @@ h2 {
 .encabezado_lista_item {    
      font-weight: 800;
 }
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 
 .galeria_card {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 100px;
+    
 }
 .galeria_card_imagen {
+  
     width: 200px;
     height: 200px;
     margin: 6px;
 } 
+.galeria_card_imagen:hover{
+ /* transform: rotate(360deg); */  
+ transition: scale (2); 
+ width: 250px;
+height: 250px; 
+
+
+}
+
 .textosresaltados {
     display: flex;
     margin: auto;
@@ -65,6 +81,8 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+
 .textosresaltados_imagen {
     width: 50px;
    height: 40px;  
