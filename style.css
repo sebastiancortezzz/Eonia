@@ -10,8 +10,11 @@ h1 {
     color: brown;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
+    transition: transform 2s
 }
-
+h1:hover{
+    transform: rotatey(180deg);
+}
 h2 {
     text-align: center;
     color: black;
@@ -56,8 +59,7 @@ h2 {
     margin: 6px;
 } 
 .galeria_card_imagen:hover{
- /* transform: rotate(360deg); */  
- transition: scale (2); 
+ transition: scale(2); 
  width: 250px;
 height: 250px; 
 
@@ -384,7 +386,7 @@ header a {
     line-height: 50px;
     list-style: none;
     font-weight: 700;
-    padding: 30px;
+     padding: 30px; 
 }
 
 .menuproducto_item {
@@ -397,14 +399,46 @@ header a {
 .precios_item {
     display: inline-block;
     margin: 70px;
-    padding: 50px;
+ padding: 50px; 
 }
 
 .precios_item_imagen {
     width: 260px;
-    height: 55vh;
-    margin: 30px;
+    height: 55vh; 
+    margin: 30px auto;/* despues sacar el auto */
+    border: solid;
+    background-image: url(./imagenes/batick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: carrousel 10s infinite;
 }
+@keyframes carrousel {
+0%{
+    background-image: url(./imagenes/batickmica2.jpeg)
+
+}
+25%{
+    background-image: url(./imagenes/batickmicaydani.jpeg)
+}
+50%{
+    background-image: url(./imagenes/buzoblancoypantalonnegro.jpeg);
+}
+75%{
+    background-image: url(./imagenes/buzogrissolo.jpeg);
+}
+100%{
+    background-image: url(./imagenes/remerabordoynude.jpeg);
+
+}
+
+
+
+
+
+
+}
+
+
 
 .textoslorem {
     background-color: black;
