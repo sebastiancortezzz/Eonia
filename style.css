@@ -21,6 +21,8 @@ h2 {
     font-weight: 900;
 }
 
+
+
 .pantalla {
     background-image: url(./imagenes/verdemica.jpg);
     background-position: center;
@@ -28,43 +30,21 @@ h2 {
     background-size: 100%;
 }
 
-.encabezado_lista {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: large;
-    margin: 16px;
-    line-height: 50px;
-    list-style: none;
+.fw-bolder{
+    text-align: center;
+    color: black;
 }
 
-.encabezado_lista_item {    
-     font-weight: 800;
-}
+
 .galeria{
     display: flex;
     justify-content: space-evenly;
     
 }
+.carousel-item img {
+     height: 400px;
+    }
 
-.galeria_card {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 100px;
-    
-}
-.galeria_card_imagen {
-  
-    width: 200px;
-    height: 200px;
-    margin: 6px;
-} 
-.galeria_card_imagen:hover{
- transition: scale(2); 
- width: 250px;
-height: 250px; 
-
-
-}
 
 .textosresaltados {
     display: flex;
@@ -84,12 +64,12 @@ height: 250px;
     justify-content: space-evenly;
 }
 
-
-.textosresaltados_imagen {
+.bi{
     width: 50px;
-   height: 40px;  
+    height: 40px;
     justify-content: space-evenly;
 }
+
 .textoscomunes {
     padding: 50px;
     text-align: center;
@@ -99,11 +79,11 @@ height: 250px;
     color: black;
 }
 body {
-    background-color: rgb(170, 243, 170);
+    background-color: rgb(236, 43, 43);
 }
 footer {
     display: flex;
-    background-color: rgb(170, 243, 170);
+    background-color: rgb(245, 97, 97);
 
 }
 /* media queri 768 de index */
@@ -278,17 +258,8 @@ header a {
     background-size: 100%;
 }
 
-.margen {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: large;
-    padding: 4%;
-    font-weight: 800;
-    list-style: none;
-}
-
 .contactanos {
-    padding: 5px 150px 50px 150px;
+    padding: 100px ; 
     display: grid;
     grid-template-columns: 60%;
     justify-content: center;
@@ -299,14 +270,14 @@ header a {
     margin: 5px;
 }
 
-.parrafo2 {
+ .font-monospace{
     text-align: center;
     font-weight: 900;
-    background-color: rgb(250, 253, 209);
+    background-color: rgb(245, 247, 222);
     border: solid 1px;
     color: rgb(223, 103, 103);
 
-}
+} 
 /* media queri contacto 768 */
 @media screen and (max-width: 768px) {
     footer {
