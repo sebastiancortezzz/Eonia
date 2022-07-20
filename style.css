@@ -22,8 +22,6 @@ h2 {
     font-weight: 900;
 }
 
-
-
 .pantalla {
     background-image: url(./imagenes/verdemica.jpg);
     background-position: center;
@@ -155,72 +153,7 @@ footer {
     }
 
 
-
-  /*   h1{
-       display: flex;
-        align-items: center;
-    }
-
-    h2{
-        display: flex;
-        align-items: center;
-    }
-
-    body {
-        background-color: plum;
-    }
-
-    .encabezado_lista {
-        display: grid;
-        justify-content: stretch;
-        font-size: large;
-        font-weight: 900;
-    }
-
-    .textoscomunes {
-        display: flex;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: brown;
-    }
-
-    .textosresaltados {
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-    }
-
-     .textosresaltados_card_imagen {
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-evenly;
-    } 
-
-    .galeria_card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 50px;
-    } 
-
-   .galeria_card_imagen {
-        width: 20vh;
-        height: 110px;
-        max-width: 100%;    
-    } */
-
-   /*  footer {
-        display: flex;
-        max-width: 100%;
-        background-color: plum;
-        align-items: center;
-        width: 100%;
-    }
-    .textosresaltados{
-        max-width: 100%;
-    }
-    .textosresaltados_imagen {
-         width: 35px   
-    } */
-}  */
+}  
 
 
 /*  quienes somos */
@@ -259,14 +192,15 @@ header a {
 }
 
 .ubi {
-    text-align: start;
+    margin: 5px;
+     text-align: start; 
 
 }
 
 .mapaubi {
-    height: 50vh;
-    padding: 10px 50px;
-    margin: 50px auto;
+    height: 30vh;
+   padding: 10px 50px; 
+    margin: 0px;
 }
 
 .menu1 {
@@ -403,7 +337,13 @@ ul{
     line-height: 50px;
     text-align: center;
 }
-
+.parraprivacidad{
+    padding: 30px;
+    font-weight: 900;
+    font-size: larger;
+    text-align: center;
+    
+}
 /* Producto*/
 .fotoatras {
     background-image: url(./imagenes/pibeypiba1.jpg);
@@ -413,7 +353,7 @@ ul{
 }
 
 .menuproducto {
-    display: inline-block;
+    display: flex;
     justify-content: space-evenly;
     margin: 14px;
     line-height: 50px;
@@ -424,53 +364,31 @@ ul{
 
 .menuproducto_item {
     display: flex;
-    justify-content: space-evenly;
+    
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.precios_item {
-    display: inline-block;
-    margin: 70px;
- padding: 50px; 
+.precios{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
+.parraproducto{
+padding: 30px;
+font-weight: 900;
+font-size: larger;
+text-align: center;
 
+}
 .precios_item_imagen {
+     display: grid;
+   grid-template-columns: repeat(4,1fr);
     width: 260px;
-    height: 55vh; 
-    margin: 30px ;/* despues sacar el auto */
-    border: solid;
-    background-image: url(./imagenes/batick.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: carrousel 10s infinite;
+    height: 55vh;  
+     margin: 30px ; 
+   
 }
-/* @keyframes carrousel {
-0%{
-    background-image: url(./imagenes/batickmica2.jpeg)
-
-}
-25%{
-    background-image: url(./imagenes/batickmicaydani.jpeg)
-}
-50%{
-    background-image: url(./imagenes/buzoblancoypantalonnegro.jpeg);
-}
-75%{
-    background-image: url(./imagenes/buzogrissolo.jpeg);
-}
-100%{
-    background-image: url(./imagenes/remerabordoynude.jpeg);
-
-}
-
-
-
-
-
-
-} */
-
 
 
 .textoslorem {
