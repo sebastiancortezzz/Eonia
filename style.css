@@ -23,7 +23,7 @@ h2 {
 }
 
 .pantalla {
-    background-image: url(./imagenes/verdemica.jpg);
+    background-image: url(../imagenes/verdemica.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
